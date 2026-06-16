@@ -133,7 +133,7 @@ const nextConfig: NextConfig = {
 
   // Environment variables (Optional - for build time)
   env: {
-    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://your-project-name.vercel.app',
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://portfolio-nine-peach-41.vercel.app/',
   },
 
   // Output configuration
