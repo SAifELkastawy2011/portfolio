@@ -180,14 +180,14 @@ export default function Contact() {
                   <a
                     key={info.label}
                     href={info.href}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-black/50 border border-neutral-800 hover:border-blue-500/50 transition-all duration-300 group"
+                    className="flex flex-wrap items-center gap-4 p-4 rounded-xl bg-black/50 border border-neutral-800 hover:border-blue-500/50 transition-all duration-300 group w-full"
                   >
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500/20 to-pink-500/20 flex items-center justify-center text-xl text-blue-400 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500/20 to-pink-500/20 flex items-center justify-center text-xl text-blue-400 group-hover:scale-110 transition-transform flex-shrink-0">
                       <info.icon />
                     </div>
-                    <div>
+                    <div className="flex-1 min-w-[120px]">
                       <p className="text-sm text-neutral-500">{info.label}</p>
-                      <p className="text-neutral-300 group-hover:text-white transition-colors">
+                      <p className="text-neutral-300 group-hover:text-white transition-colors break-all md:break-normal">
                         {info.value}
                       </p>
                     </div>
